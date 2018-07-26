@@ -1,11 +1,11 @@
 {
-  "name": "cucumber-slices",
+  "name": "@bbc/cucumber-slices",
   "version": "1.0.0",
   "description": "Split cucumber feature files into a separate file for each scenario",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage --forceExit --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
     "feature",
     "gherkin"
   ],
+  "author": "CPS Team",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/bbc/cucumber-slices/issues"
