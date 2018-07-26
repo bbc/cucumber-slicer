@@ -35,11 +35,19 @@ removed later.
 
 ## Why?
 
-Some test infrastructures, such as Browserstack, run the feature files
-in parallel. If you write Gherkin files in the normal way, you'll have
-several scenarios per feature, but this means those scenarios are run
+Many test automation infrastructures, such as
+[Browserstack](https://www.browserstack.com/) or [Sauce Labs](https://saucelabs.com/), run the feature files
+in parallel. However, if you write Gherkin/cucumber files in the normal way, you'll have
+several scenarios per feature. This means those scenarios are run
 as a group. There are various ways to address this (see
 [parallel-cucumber](https://github.com/simondean/parallel-cucumber-js),
 for example). The easiest way we found was to just use cucumber in the
 normal way and split the tests into individual scenarios when we
-wanted to run them on Browserstack or similar environment.
+wanted to run them on Browserstack or similar environment. We get the
+benefit of managing feature files in the way we are used to, with
+scenarios grouped by major feature, while still getting reasonable
+performance from automated tests.
+
+You will need to write the scenarios so that they are capable of running
+in parallel, which is tricky if your tests access a shared database.
+The `@nosplit` tag allows you to run some of your scenarios sequentially.
