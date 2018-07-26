@@ -1,5 +1,3 @@
 const { cucumberSlicer } = require('./lib/cucumber-slicer');
 
-module.exports = {
-  cucumberSlicer
-};
+module.exports = cucumberSlicer;
