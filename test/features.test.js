@@ -3,7 +3,7 @@ const {
   extractScenarios,
   getScenariosOfType,
   getFeatureTop,
-} = require('./features');
+} = require('../lib/features');
 
 const testScenarios = [
   {

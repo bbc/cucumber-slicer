@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { cucumberSlicer } = require('./cucumber-slicer');
+const { cucumberSlicer } = require('../lib/cucumber-slicer');
 const mock = require('mock-fs');
 
 const simpleMultipleScenarios = `Feature: Testing

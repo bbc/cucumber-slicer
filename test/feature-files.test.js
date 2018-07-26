@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { getAllFeatureFiles,
         removeGeneratedFiles,
-        writeFeatureFile } = require('./feature-files');
+        writeFeatureFile } = require('../lib/feature-files');
 const mock = require('mock-fs');
 
 beforeAll(() => {
