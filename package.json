@@ -1,6 +1,6 @@
 {
   "name": "@bbc/cucumber-slicer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Split cucumber feature files into a separate file for each scenario",
   "main": "index.js",
   "scripts": {
